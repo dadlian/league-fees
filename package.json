@@ -30,8 +30,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
     "build-dev": "webpack --mode development --env development",
     "build-staging": "webpack --mode production --env staging",
     "build": "webpack --mode production --env production",
