@@ -7,7 +7,7 @@ Structure for a Multi-Page Application using ReactJS and Webpack.
 To get started you'll want to clone the repository.
 
 ```
-git clone git@github.com:dadlian/vegetable-lister.git
+git clone git@github.com:dadlian/react-mpa-shell.git
 ```
 
 Alternatively you can download the source as a ZIP file from GitHub.
