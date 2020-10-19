@@ -22,10 +22,11 @@ from the CLI.
 npm install
 ```
 
-### Testing
+### Development
 
-To see if you have correctly installed the React MPA Starter run the following
-from your command prompt
+While developing you can view changes to your MPA in real-time via any browser of
+your choice. To run the project locally via the Webpack test server, run the following
+from your command prompt:
 
 ```
 npm run serve
@@ -52,7 +53,7 @@ To build for staging:
 npm run build-staging
 ```
 
-To build for production
+To build for production:
 
 ```
 npm run build
