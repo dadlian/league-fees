@@ -8,13 +8,6 @@
             "password": "c0r1nTh14n",
             "prefix": ""
         },
-        "messaging": {
-            "hostname": "",
-            "port": "",
-            "username": "",
-            "password": "",
-            "exchange": ""
-        },
         "install": {
             "url": "localhost:8000"
         },
@@ -24,24 +17,18 @@
     },
     "production": {
         "database": {
-            "hostname": "",
-            "database": "",
-            "username": "",
-            "password": "",
+            "driver": "mysql",
+            "hostname": "localhost",
+            "database": "league_fees",
+            "username": "kycsar",
+            "password": "c0r1nTh14n",
             "prefix": ""
         },
-        "messaging": {
-            "hostname": "",
-            "port": "",
-            "username": "",
-            "password": "",
-            "exchange": ""
-        },
         "install": {
-            "url": ""
+            "url": "kycsar.com/league-fees/api"
         },
         "logging": {
-            "level": ""
+            "level": "debug"
         }
     }
 }

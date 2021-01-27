@@ -14,7 +14,7 @@ module.exports = (env, argv) => ({
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: argv.env == 'staging'?'/league-fees/':'/',
+    publicPath: argv.env == 'production'?'/league-fees/':'/',
     filename: "./[name].bundle.js"
   },
   module: {
@@ -68,21 +68,21 @@ module.exports = (env, argv) => ({
       filename:"index.html",
       template: 'index.html',
       chunks: ['leagues'],
-      base: '/'
+      base: argv.env == 'production'?'/league-fees/':'/'
     }),
     new HtmlWebpackPlugin({
       title: "Seasons | Pay League Fees",
       filename:"seasons/index.html",
       template: 'index.html',
       chunks: ['seasons'],
-      base: '/'
+      base: argv.env == 'production'?'/league-fees/':'/'
     }),
     new HtmlWebpackPlugin({
       title: "Teams | Pay League Fees",
       filename:"teams/index.html",
       template: 'index.html',
       chunks: ['teams'],
-      base: '/'
+      base: argv.env == 'production'?'/league-fees/':'/'
     })
   ],
   devServer: {

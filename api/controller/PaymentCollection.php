@@ -55,7 +55,7 @@
           "country" => $data["country"],
           "details" => [
             [
-              "name" => "League Dues",
+              "name" => "Fantasy League Fees",
               "number" => "0000",
               "price" => $data["amount"],
               "quantity" => 1

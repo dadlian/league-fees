@@ -1,3 +1,3 @@
 export const settings = {
-  apiRoot: "http://localhost:8000"
+  apiRoot: "https://kycsar.com/league-fees/api"
 }

@@ -8,7 +8,7 @@ export default class Header extends React.Component{
 
   render(){
     return (
-      <div className={styles.header} onClick={()=>{location.href="/"}}>
+      <div className={styles.header} onClick={()=>{location.href=""}}>
         <div className={styles.content}>
           <div className={styles.hamburger}>
             <img src='assets/hamburger.png' alt='menu' />

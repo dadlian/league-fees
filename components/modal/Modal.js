@@ -11,7 +11,7 @@ export default class Modal extends React.Component{
       return (
         <div className={styles.overlay}>
           <div className={styles.modal}>
-            <div className={styles.menu} onClick={this.props.close}><img src='../../assets/close.png' /></div>
+            <div className={styles.menu} onClick={this.props.close}><img src='assets/close.png' /></div>
             {this.props.children}
           </div>
         </div>

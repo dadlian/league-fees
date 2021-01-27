@@ -61,7 +61,7 @@ class TeamsPage extends React.Component{
               <div key={index} className={styles.team}>
                 <Listing fields={{"Finish":team.position, "Outstanding":`\$${team.due}.00`}}
                           actionText={team.due?'Pay':''} action={()=>{this.payForTeam(team)}}
-                          name={team.name} thumbnail="../../assets/nfl-fantasy-logo.png" />
+                          name={team.name} thumbnail="assets/nfl-fantasy-logo.png" />
               </div>
             ))
           }
@@ -69,7 +69,7 @@ class TeamsPage extends React.Component{
 
         <Modal visible={this.state.showModal} close={this.hideModal}>
           <div className={styles.payForm}>
-            <Form action="Pay Dues" fields={this.state.payForm} onSubmit={this.pay}
+            <Form action={`Pay \$${this.state.team.due}.00`} fields={this.state.payForm} onSubmit={this.pay}
                     success={this.state.success} error={this.state.error} loading={this.state.loading} loadText="Paying Fees..."  />
           </div>
         </Modal>

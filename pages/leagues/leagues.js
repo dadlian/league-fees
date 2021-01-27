@@ -48,7 +48,7 @@ class LeaguesPage extends React.Component{
               <div key={index} className={styles.league}>
                 <Listing fields={{"League ID":league.leagueId, "Seasons":league.seasons.length}}
                           actionText='View' action={()=>{this.edit(league)}}
-                          name={league.name} thumbnail="../../assets/nfl-fantasy-logo.png" />
+                          name={league.name} thumbnail="assets/nfl-fantasy-logo.png" />
               </div>
             ))
           }
