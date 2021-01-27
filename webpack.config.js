@@ -8,11 +8,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env, argv) => ({
   entry: {
-    home: "./pages/home/home.js"
+    leagues: "./pages/leagues/leagues.js",
+    seasons: "./pages/seasons/seasons.js",
+    teams: "./pages/teams/teams.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    publicPath: argv.env == 'staging'?'/blueocean/':'/',
+    publicPath: argv.env == 'staging'?'/league-fees/':'/',
     filename: "./[name].bundle.js"
   },
   module: {
@@ -62,10 +64,24 @@ module.exports = (env, argv) => ({
       ]
     }),
     new HtmlWebpackPlugin({
-      title: "Home | ReactJS MPA Shell",
+      title: "Leagues | Pay League Fees",
       filename:"index.html",
       template: 'index.html',
-      chunks: ['home'],
+      chunks: ['leagues'],
+      base: '/'
+    }),
+    new HtmlWebpackPlugin({
+      title: "Seasons | Pay League Fees",
+      filename:"seasons/index.html",
+      template: 'index.html',
+      chunks: ['seasons'],
+      base: '/'
+    }),
+    new HtmlWebpackPlugin({
+      title: "Teams | Pay League Fees",
+      filename:"teams/index.html",
+      template: 'index.html',
+      chunks: ['teams'],
       base: '/'
     })
   ],

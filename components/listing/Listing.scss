@@ -1,0 +1,25 @@
+.listing{
+  display: flex;
+
+  .thumbnail{
+
+    img{
+      width:75px;
+      height:83px;
+      margin-bottom:15px;
+    }
+  }
+
+  .content{
+    margin-left: 15px;
+
+    h2{
+      margin: 0px;
+      font-size:1.15em;
+    }
+
+    .field{
+      margin-top:5px;
+    }
+  }
+}

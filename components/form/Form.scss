@@ -1,0 +1,57 @@
+.form{
+  grid-column: 1 / 12;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .field{
+    width: 100%;
+    max-width: 400px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  .field.short{
+    width: calc(50% - 10px);
+  }
+
+  .field.full{
+    max-width: 100%;
+  }
+
+  .panel{
+    width: 100%;
+
+    .success{
+      font-size:1.25em;
+      margin-bottom:15px;
+      color:#488E48;
+      font-weight: bold;
+    }
+
+    .error{
+      font-size:1em;
+      margin-bottom:15px;
+      color:#F60232;
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .form{
+    max-width: 100%;
+
+    .field{
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
+
+    .panel{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

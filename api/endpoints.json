@@ -1,0 +1,39 @@
+{
+  "endpoints":[
+    {
+      "name":"League Collection",
+      "path":"leagues",
+      "controller":"LeagueCollection",
+      "roles":{},
+      "parameters":[]
+    },
+    {
+      "name":"League Resource",
+      "path":"leagues/@",
+      "controller":"LeagueResource",
+      "roles":{},
+      "parameters":["league"]
+    },
+    {
+      "name":"Season Collection",
+      "path":"leagues/@/seasons",
+      "controller":"SeasonCollection",
+      "roles":{},
+      "parameters":["league"]
+    },
+    {
+      "name":"Season Resource",
+      "path":"seasons/@",
+      "controller":"SeasonResource",
+      "roles":{},
+      "parameters":["season"]
+    },
+    {
+      "name":"Payments Collection",
+      "path":"teams/@/payments",
+      "controller":"PaymentCollection",
+      "roles":{},
+      "parameters":["team"]
+    }
+  ]
+}

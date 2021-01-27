@@ -1,0 +1,47 @@
+{
+    "development": {
+        "database": {
+            "driver": "mysql",
+            "hostname": "localhost",
+            "database": "league_dues",
+            "username": "root",
+            "password": "c0r1nTh14n",
+            "prefix": ""
+        },
+        "messaging": {
+            "hostname": "",
+            "port": "",
+            "username": "",
+            "password": "",
+            "exchange": ""
+        },
+        "install": {
+            "url": "localhost:8000"
+        },
+        "logging": {
+            "level": "debug"
+        }
+    },
+    "production": {
+        "database": {
+            "hostname": "",
+            "database": "",
+            "username": "",
+            "password": "",
+            "prefix": ""
+        },
+        "messaging": {
+            "hostname": "",
+            "port": "",
+            "username": "",
+            "password": "",
+            "exchange": ""
+        },
+        "install": {
+            "url": ""
+        },
+        "logging": {
+            "level": ""
+        }
+    }
+}
